@@ -1,0 +1,41 @@
+module.exports = {
+  name: "Poker Tallies",
+  slug: "poker-tallies",
+  version: "1.0.0",
+  orientation: "portrait",
+  icon: "./assets/icon.png",
+  userInterfaceStyle: "light",
+  splash: {
+    image: "./assets/splash.png",
+    resizeMode: "contain",
+    backgroundColor: "#ffffff"
+  },
+  assetBundlePatterns: [
+    "**/*"
+  ],
+  ios: {
+    supportsTablet: true,
+    bundleIdentifier: "com.pokertallies.app",
+    buildNumber: "1",
+    requireFullScreen: true,
+    infoPlist: {
+      UIBackgroundModes: []
+    }
+  },
+  android: {
+    adaptiveIcon: {
+      foregroundImage: "./assets/adaptive-icon.png",
+      backgroundColor: "#ffffff"
+    },
+    package: "com.pokertallies.app",
+    versionCode: 1
+  },
+  web: {
+    favicon: "./assets/favicon.png"
+  },
+  extra: {
+    eas: {
+      projectId: "5655969f-3542-4a3b-b7e2-b294eb4eb229"
+    }
+  }
+}; 

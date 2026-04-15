@@ -20,3 +20,7 @@ A React Native mobile app for tracking Texas Hold 'Em poker game without using c
 - Built with React Native
 - Uses Expo for development and building
 - Supports both iOS and Android platforms
+
+## Support and Privacy
+- Support: https://github.com/jwiseman-hub/poker-tallies-and-rowies/blob/main/SUPPORT.md
+- Privacy Policy: https://github.com/jwiseman-hub/poker-tallies-and-rowies/blob/main/PRIVACY.md

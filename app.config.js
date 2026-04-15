@@ -15,7 +15,7 @@ module.exports = {
   ],
   ios: {
     supportsTablet: true,
-    bundleIdentifier: "com.pokertallies.app",
+    bundleIdentifier: "com.johnwiseman.pokertalliesandrowies",
     buildNumber: "1",
     requireFullScreen: true,
     infoPlist: {

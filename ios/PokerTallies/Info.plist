@@ -25,7 +25,7 @@
       <dict>
         <key>CFBundleURLSchemes</key>
         <array>
-          <string>com.pokertallies.app</string>
+          <string>com.johnwiseman.pokertalliesandrowies</string>
         </array>
       </dict>
     </array>

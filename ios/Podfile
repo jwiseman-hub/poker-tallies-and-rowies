@@ -78,6 +78,17 @@ target 'PokerTallies' do
         end
       end
     end
+
+    # App Store Connect rejects IPAs where embedded Hermes still contains bitcode (90482).
+    # Prebuilt Hermes binaries may include bitcode; strip it from all device slices.
+    bitcode_strip_path = `xcrun --find bitcode_strip`.strip
+    unless bitcode_strip_path.empty?
+      Dir.glob(File.join(__dir__, 'Pods', '**', 'hermes.framework', 'hermes')).each do |hermes_bin|
+        next unless File.file?(hermes_bin)
+        Pod::UI.puts "Stripping bitcode from #{hermes_bin}"
+        system(bitcode_strip_path, '-r', '-o', hermes_bin, hermes_bin)
+      end
+    end
   end
 
   post_integrate do |installer|
